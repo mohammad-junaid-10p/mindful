@@ -1,0 +1,70 @@
+//  Override bootstrap vars
+
+$btn-border-radius-lg: rem(80);
+$btn-border-radius: rem(20);
+$btn-font-size-lg: rem(16);
+$btn-padding-x-lg: rem(25);
+$btn-padding-y-lg: rem(12);
+$btn-font-size: rem(15);
+$btn-font-weight: 500;
+$gray-100: #f7f7f7;
+$gray-200: #ebeeef;
+$gray-300: #c7cccf;
+$gray-400: #a2a9ad;
+$gray-500: #575F60;
+$gray-600: #262626;
+$border-radius: rem(3);
+$badge-font-weight: normal;
+$font-weight-bolder: 500;
+$badge-font-size: rem(14);
+$spacer: rem(20);
+$grid-gutter-width: rem(24);
+$form-check-input-checked-color: $info;
+$form-check-input-checked-bg-color: white;
+$form-check-input-checked-border-color: $gray-300;
+$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2.8' fill='#{$form-check-input-checked-color}'/></svg>");
+$input-border-color: $gray-300;
+$form-label-font-weight: 700;
+$form-label-font-size: rem(15);
+$form-label-margin-bottom: rem(5);
+$form-label-color: $dark;  
+$modal-content-border-radius: 0;
+$modal-sm: rem(320);
+$modal-dialog-margin-y-sm-up: rem(130); 
+$modal-content-box-shadow-xs: rem(0) rem(1) rem(20) rgba(black, 0.25);
+$modal-content-box-shadow-sm-up: rem(0) rem(1) rem(20) rgba(black, 0.25);
+$modal-content-border-width: 0;
+$modal-inner-padding: rem(30);
+$form-feedback-icon-valid-color: $success-200;
+$form-feedback-icon-invalid-color: $red;
+$form-feedback-icon-invalid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><path fill='#{$form-feedback-icon-invalid-color}' d='M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z'/></svg>");
+$form-feedback-icon-valid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='#{$form-feedback-icon-valid-color}' d='M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z'/></svg>");
+$caret-width: rem(7);
+//Bootstrap theming
+$colors: (
+  "red": $red,
+  "gray": $dark,
+);
+
+$theme-colors: (
+  "primary": $primary,
+  "primary-dark": $primary-dark,
+  "secondary": $secondary,
+  "danger": $red,
+  "info": $info,
+  "success": $success,
+  "success-100": $success-100,
+  "success-400": $success-400,
+  "gray-200": $gray-200,
+  "gray-400": $gray-400,
+  "gray-500": $gray-500,
+  "gray-600": $gray-600,
+  "dark": $dark,
+  "black": black,
+);
+
+$border-widths: (
+  1: 3px,
+  2: 20px,
+  3: 80px,
+);

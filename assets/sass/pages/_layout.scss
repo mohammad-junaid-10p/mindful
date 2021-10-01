@@ -1,0 +1,54 @@
+//===========================================
+// -Home Page start
+//===========================================
+
+.layout-wrapper {
+  display: flex;
+  @include mq('lg', max) {
+    overflow: hidden;
+  }
+  .main-section {
+    height: calc(100% - #{rem(60)});
+    background-color: $gray-100;
+  }
+  &.sidebar-expanded {
+    .main-container {
+      margin-left: 250px;
+      @include mq('lg', max) {
+        margin-left: 0px;
+      }
+    }
+    .main-sidebar {
+      width: 250px;
+      @include mq('lg', max) {
+        width: 0px;
+      }
+    }
+  }
+}
+
+.main-section-container {
+  padding: rem(30);
+  padding-top: 0;
+  @include mq('lg', max) {
+    padding: rem(14);
+    padding-top: 0;
+  }
+}
+
+.main-container {
+  box-shadow: 0px rem(2) rem(15) rgba(black, 0.3);
+  min-height: 100vh;
+  margin-left: 0;
+  transition: 0.3s;
+  z-index: 2;
+  @include mq('lg', max) {
+    margin-left: 250px;
+  }
+  @include mq('lg', max) {
+    min-width: 100%;
+  }
+}
+//===========================================
+// -Home Page end
+//===========================================

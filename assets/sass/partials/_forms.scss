@@ -1,0 +1,125 @@
+//===========================================
+// -Forms Start
+//===========================================
+
+.form-check-input {
+    min-width: rem(16);
+    min-height: rem(16);
+}
+
+.form-seprator {
+    background: $gray-200;
+    opacity: 1;
+    &.dark {
+        background: $gray-300;
+    }
+}
+
+.form-btn {
+    button {
+        min-height: rem(40);
+    }
+}
+form {
+    p {
+        color: $gray-500;
+    }
+}
+.form-control {
+    &::-ms-reveal,&::-ms-clear {
+      display: none;
+    }
+    &.is-invalid {
+        background-size: rem(13);
+        border-width: rem(2);
+    }
+    &.is-valid {
+        background-size: rem(15);
+        border-color: $gray-300;
+    }
+}
+
+.cc-input {
+    position: relative;
+    .shown ~ input {
+        padding-right: rem(60);
+        &.is-invalid,&.is-valid {
+            padding-right: rem(80);
+            background-position: right rem(60) center;
+        }
+    }
+    img {
+        position: absolute;
+        right: rem(10);
+        top: rem(8);
+        height: rem(25);
+        display: none;
+        &.shown {
+            display: block; 
+        }
+    }
+}
+
+.switch {
+	position: relative;
+	display: block;
+	width: rem(44);
+	height: rem(20);
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        background-color: $gray-200;
+        border-radius: rem(20);
+        transition: .4s;
+        &:before {
+            position: absolute;
+            content: "\e94c";
+            font-family: $icomoon-font-family;
+            height: rem(25);
+            width: rem(25);
+            left: rem(-2);
+            bottom: rem(-3);
+            background-color: white;
+            box-shadow: rem(0) rem(1) rem(5) rgba(black, 0.2);
+            border-radius: 50%;
+            transition: .4s;
+            font-size: rem(11);
+            color: $gray-300;
+            @extend %flexcenter;
+        }
+    }
+    input {
+        display: none;
+        &:checked {
+            + {
+                .slider {
+                    background-color: $success-100;
+                    &:before {
+                        content: "\e949";
+                        transform: translateX(rem(22));
+                        color: white;
+                        background-color: $success-300;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+.password-field {
+    display: flex;
+    align-items: center;
+    i {
+        font-size: rem(20);
+        margin-left: rem(-30);
+        color: rgba($gray-500, 0.8);
+        cursor: pointer;
+    }
+}
+
+//===========================================
+// -Forms end
+//===========================================

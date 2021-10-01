@@ -1,0 +1,31 @@
+//===========================================
+// -Buttons start
+//===========================================
+
+.btn {
+  cursor: pointer;
+  font-weight: 500;
+  &[disabled],
+  &.disabled {
+    cursor: not-allowed;
+  }
+  &.btn-danger {
+    background-color: rgba($red, 0.07);
+    color: $red;
+  }
+  &.btn-tritary {
+    background: white;
+    color: $primary;
+    border: rem(1) solid $tritary;
+    color: black;
+
+    &:hover {
+      color: white;
+      background: $tritary;
+    }
+  }
+}
+//===========================================
+// -Buttons end
+//===========================================
+   

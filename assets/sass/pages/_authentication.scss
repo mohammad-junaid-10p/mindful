@@ -1,0 +1,56 @@
+.auth-banner {
+    width: rem(488);
+}
+
+.auth-container {
+    padding-top: rem(135);
+    @include mq('md', max) {
+        padding-top: 35px;
+    }
+    min-height: calc(100vh - #{rem(80)});
+}
+
+.auth-form {
+
+    @include mq('lg', min) {
+        width: rem(479);
+    }
+    width: 100%;
+    .nav-tabs {
+        flex-wrap: nowrap;
+    }
+    .nav-item {
+        @include mq('lg', min) {
+            flex: unset;
+        }
+        .nav-link {
+            padding: rem(25) rem(35);
+            text-align: center;
+            white-space: nowrap;
+            text-decoration: none;
+            @include mq('md', max) {
+                padding: 25px 15px;
+                white-space: normal;
+            }
+            h2 {
+                font-size: rem(28);
+                @include mq('md', max) {
+                    font-size: 22px;
+                }
+            }
+            &.active {
+                color: $primary;
+            }
+        }
+
+    }
+    .auth-checkbox { 
+        background-color: $light;
+        border: rem(1) solid $primary;
+        &-label {
+            b {
+                font-weight: 600;
+            }
+        }
+    }
+}

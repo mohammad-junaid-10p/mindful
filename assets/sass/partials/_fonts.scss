@@ -1,0 +1,194 @@
+//===========================================
+// -Fonts start
+//===========================================
+
+/* Foro Sans fonts */
+
+@include font-face("Foro Sans", $font-path, "forosansthinita-webfont", 100, "italic");
+@include font-face("Foro Sans", $font-path, "forosansxligita-webfont", 200, "italic");
+@include font-face("Foro Sans", $font-path, "forosansligita-webfont", 300, "italic");
+@include font-face("Foro Sans", $font-path, "forosansita-webfont", 400, "italic");
+@include font-face("Foro Sans", $font-path, "forosansmedita-webfont", 500, "italic");
+@include font-face("Foro Sans", $font-path, "forosansbolita-webfont", 700, "italic");
+@include font-face("Foro Sans", $font-path, "forosansxbolita-webfont", 800, "italic");
+@include font-face("Foro Sans", $font-path, "forosansblaita-webfont", 900, "italic");
+
+@include font-face("Foro Sans", $font-path, "forosansthin-webfont", 100, "normal");
+@include font-face("Foro Sans", $font-path, "forosansxlig-webfont", 200, "normal");
+@include font-face("Foro Sans", $font-path, "forosanslig-webfont", 300, "normal");
+@include font-face("Foro Sans", $font-path, "forosansreg-webfont", 400, "normal");
+@include font-face("Foro Sans", $font-path, "forosansmed-webfont", 500, "normal");
+@include font-face("Foro Sans", $font-path, "forosansbol-webfont", 700, "normal");
+@include font-face("Foro Sans", $font-path, "forosansxbol-webfont", 800, "normal");
+@include font-face("Foro Sans", $font-path, "forosansbla-webfont", 900, "normal");
+
+/* Capita fonts */
+
+@include font-face("Capita", $font-path, "capitaligita-webfont", 300, "italic");
+@include font-face("Capita", $font-path, "capitaregita-webfont", 400, "italic");
+@include font-face("Capita", $font-path, "capitamedita-webfont", 500, "italic");
+@include font-face("Capita", $font-path, "capitabolita-webfont", 700, "italic");
+
+@include font-face("Capita", $font-path, "capitalight", 300, "normal");
+@include font-face("Capita", $font-path, "capitareg-webfont", 400, "normal");
+@include font-face("Capita", $font-path, "capitamed-webfont", 500, "normal");
+@include font-face("Capita", $font-path, "capitabol-webfont", 700, "normal");
+
+/* courier new fonts */
+
+@include font-face("Courier new", $font-path, "courbd", 700, "normal");
+
+/* Fonts stacks */
+:root {
+  --font-family-sans-serif: "Foro Sans", Arial, "Noto Sans", sans-serif;
+  --font-family-serif: "Capita", Georgia, serif; }
+
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: "./../fonts" !default;
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "#{$icomoon-font-family}" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Icomoon Icon Font
+
+@font-face {
+  font-family: "#{$icomoon-font-family}";
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?pzi19m")
+      format("truetype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?pzi19m")
+      format("woff"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?pzi19m##{$icomoon-font-family}")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+$font-types: (
+  file: "\e956",
+  help: "\e950",
+  legal: "\e951",
+  education: "\e952",
+  upload: "\e953",
+  telephone: "\e954",
+  email: "\e955",
+  eyeclose: "\e94d",
+  eye: "\e94f",
+  camera: "\e942",
+  cross: "\e94c",
+  tick: "\e949",
+  membership-banner: "\e94b",
+  add: "\e947",
+  card-visa: "\e948",
+  card-master: "\e94a",
+  card-discover: "\e94e",
+  card-amex: "\e957",
+  bank: "\e959",
+  bank-account: "\e95a",
+  card-large: "\e95d",
+  credit-card: "\e95e",
+  chevron-down: "\e960",
+  chevron-up: "\e961",
+  donation: "\e962",
+  profile: "\e963",
+  menu: "\e964",
+  payments: "\e965",
+  membership: "\e966",
+  family: "\e967",
+  profile-o: "\e968",
+  languages: "\e93c",
+  globe: "\e93d",
+  military: "\e93e",
+  drop-off: "\e93f",
+  religious: "\e940",
+  state-orgs: "\e941",
+  fees: "\e943",
+  external: "\e944",
+  parent: "\e945",
+  discount-o: "\e946",
+  search-button: "\e93b",
+  cancel: "\e931",
+  chevron-up-b: "\e932",
+  discount: "\e933",
+  chevron-down-b: "\e934",
+  filter: "\e935",
+  audience: "\e936",
+  group: "\e937",
+  location: "\e938",
+  meeting: "\e939",
+  verified: "\e93a",
+  webinar: "\e930",
+  urgent: "\e901",
+  resource: "\e902",
+  article: "\e903",
+  video: "\e904",
+  podcast: "\e905",
+  open: "\e906",
+  search: "\e907",
+  cart: "\e908",
+  alert: "\e909",
+  mail: "\e90a",
+  phone: "\e90b",
+  fb: "\e90c",
+  twitter: "\e90d",
+  rss: "\e90f",
+  arrow-down: "\e910",
+  arrow-up: "\e911",
+  series-left: "\e912",
+  series-right: "\e913",
+  play-arrow: "\e914",
+  quote: "\e915",
+  link: "\e900",
+  extracurriculars: "\e91b",
+  record: "\e90e",
+  school: "\e916",
+  special-needs: "\e917",
+  starting-strong: "\e918",
+  newsletter: "\e919",
+  grants: "\e91a",
+  alert-o: "\e91c",
+  state: "\e91d",
+  legislative: "\e91e",
+  international: "\e91f",
+  encyclopedia: "\e920",
+  grading: "\e921",
+  testing: "\e922",
+  files: "\e923",
+  homeschool: "\e924",
+  talk: "\e925",
+  telescope: "\e926",
+  favorite: "\e927",
+  download: "\e928",
+  my-location: "\e929",
+  news: "\e92a",
+  groups: "\e92b",
+  savings: "\e92c",
+  youtube: "\e92d",
+  instagram: "\e92e",
+  bio: "\e92f",
+);
+
+@each $type, $value in $font-types {
+  .icon-#{$type} {
+    &:before {
+      content: $value;
+    }
+  }
+}
+
+//===========================================
+// -Fonts  end
+//===========================================
