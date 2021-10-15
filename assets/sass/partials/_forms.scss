@@ -37,6 +37,9 @@ form {
         background-size: rem(15);
         border-color: $gray-300;
     }
+    &::placeholder {
+        color: darken($gray-300, 10%);
+    }
 }
 
 .cc-input {
